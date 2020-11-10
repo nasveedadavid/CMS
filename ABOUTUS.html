@@ -1,0 +1,88 @@
+<html>
+<HEAD>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.a1{
+position: absolute;
+  bottom: 1px;
+right: 5px;
+font-size: 18px;
+background-color:lightgreen;
+} 
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index:1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 15px;
+}
+#snackbar.show{
+visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+</HEAD>
+<BODY bgColor="violet" onLoad="myFunction()"><center>
+<img src="bg1.jpg" width="100%" height="50%"><A HREF="index.html" class="a1">back to home</A></center>
+<marquee> <h2> ABOUT OUR CMS!!</h2></marquee>
+<pre><font size="4">
+• A college management system enables colleges and higher education to manage enrolment, admissions, students, faculty, attendance, fees, scheduling,
+  assignments, grades and library of the institution. It generates automated reports on all aspects for data-driven decision-making.
+• CMS for colleges is a comprehensive web-based software , This helps colleges and universities to save time, money and resources.
+• The College ERP allows you to manage the entire academic and administrative processes hassle free. In addition , solution for universities and 
+  colleges is a compelling value proposition which makes it as one of the most versatile college management system you can have for your college, 
+  university or institute.
+• The automated notification system allows you to seamlessly connect Teachers, Students, Administrators and Parents and keep them informed in 
+  real-time on all aspects of the institution.
+• The integrated CMS  gives a cutting-edge performance and process automation solves the most complicated tasks.
+
+</font>
+</pre>
+
+
+<div id="snackbar">YOU ARE IN "ABOUTUS" PAGE!!</div>
+
+</BODY>
+
+</html>
+
+
+

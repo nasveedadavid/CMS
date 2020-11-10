@@ -1,0 +1,259 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+button { 
+       background-color: #4CAF50; 
+       width: 100%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ #demo{ 
+        padding: 25px; 
+        background-color: lightblue;
+    } 
+ #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index:1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 15px;
+}
+#snackbar.show{
+visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+function f1()
+//student 1
+
+{
+
+var u=document.getElementById("u1").value &&
+  
+document.getElementById("p1").value
+switch(u)
+{
+case "student111_1" && "0001": 
+  var str = "you are successfully logined as STUDENT 1";
+  var result = str.link("stnext1.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_2" && "0002": 
+  var str = "you are successfully logined as STUDENT 2";
+  var result = str.link("stnext2.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_3" && "0003": 
+  var str = "you are successfully logined as STUDENT 3";
+  var result = str.link("stnext3.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_4" && "0004": 
+  var str = "you are successfully logined as STUDENT 4";
+  var result = str.link("stnext4.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_5" && "0005": 
+  var str = "you are successfully logined as STUDENT 5";
+  var result = str.link("stnext5.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_6" && "0006": 
+  var str = "you are successfully logined as STUDENT 6";
+  var result = str.link("stnext6.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_7" && "0007": 
+  var str = "you are successfully logined as STUDENT 7";
+  var result = str.link("stnext7.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_8" && "0008": 
+  var str = "you are successfully logined as STUDENT 8";
+  var result = str.link("stnext8.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_9" && "0009": 
+  var str = "you are successfully logined as STUDENT 9";
+  var result = str.link("stnext9.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_10" && "00010": 
+  var str = "you are successfully logined as STUDENT 10";
+  var result = str.link("stnext10.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_11" && "00011": 
+  var str = "you are successfully logined as STUDENT 11";
+  var result = str.link("stnext11.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_12" && "00012": 
+  var str = "you are successfully logined as STUDENT 12";
+  var result = str.link("stnext12.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_13" && "00013": 
+  var str = "you are successfully logined as STUDENT 13";
+  var result = str.link("stnext13.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_14" && "00014": 
+  var str = "you are successfully logined as STUDENT 14";
+  var result = str.link("stnext14.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_15" && "00015": 
+  var str = "you are successfully logined as STUDENT 15";
+  var result = str.link("stnext15.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_16" && "00016": 
+  var str = "you are successfully logined as STUDENT 16";
+  var result = str.link("stnext16.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_17" && "00017": 
+  var str = "you are successfully logined as STUDENT 17";
+  var result = str.link("stnext17.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_18" && "00018": 
+  var str = "you are successfully logined as STUDENT 18";
+  var result = str.link("stnext18.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_19" && "00019": 
+  var str = "you are successfully logined as STUDENT 19";
+  var result = str.link("stnext19.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_20" && "00020": 
+  var str = "you are successfully logined as STUDENT 20";
+  var result = str.link("stnext20.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_21" && "00021": 
+  var str = "you are successfully logined as STUDENT 21";
+  var result = str.link("stnext21.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_22" && "00022": 
+  var str = "you are successfully logined as STUDENT 22";
+  var result = str.link("stnext22.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_23" && "00023": 
+  var str = "you are successfully logined as STUDENT 23";
+  var result = str.link("stnext23.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_24" && "00024": 
+  var str = "you are successfully logined as STUDENT 24";
+  var result = str.link("stnext24.html");
+document.getElementById("demo").innerHTML = result;
+break;
+case "student111_25" && "00025": 
+  var str = "you are successfully logined as STUDENT 25";
+  var result = str.link("stnext25.html");
+document.getElementById("demo").innerHTML = result;
+break;
+
+
+default:
+var result="enter correct details";
+document.getElementById("demo").innerHTML = result;
+}
+}
+
+</script>
+</head>  
+<body onLoad="myFunction()">  
+    <center> <h1> INDIVIDUAL STUDENT LOGIN FORM </h1> </center>
+    <form>
+        <div id="demo"> 
+            <label>Username : </label> 
+            <input type="text" id="u1" placeholder="Enter Username" name="username" required>
+            <label>Password : </label> 
+            <input type="password" id="p1" placeholder="Enter Password" name="password" required>
+            <button type="submit" id="b1" onclick="f1()">Login</button> 
+            <input type="checkbox" checked="checked"> Remember me 
+          <a href="signup.html"> <button type="button"  id="cancelbtn"> Cancel</button></a>
+        </div> 
+    </form>
+     <div id="snackbar">YOU ARE IN " INDIVIDUAL FACULTY LOGIN " PAGE!!</div>       
+</body>   
+</html>
+
+
+
+
+
+

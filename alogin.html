@@ -1,0 +1,128 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Login Page </title>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+}
+button { 
+       background-color: #4CAF50; 
+       width: 50%%;
+        color: orange; 
+        padding: 15px; 
+        margin: 10px 0px; 
+        border: none; 
+        cursor: pointer; 
+         } 
+ form { 
+        border: 3px solid #f1f1f1; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 25%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ #demo{ 
+        padding: 25px; 
+        background-color: lightblue;
+    } 
+ #snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index:1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 15px;
+}
+#snackbar.show{
+visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+function f1()
+{
+if(document.getElementById("u1").value=="admin111") 
+{   
+if(document.getElementById("p1").value==1234)
+{
+  var str = "you are successfully logined";
+  var result = str.link("adnext.html");
+  document.getElementById("demo").innerHTML = result;
+}
+}
+else
+{
+alert("enter correct details");
+}
+}
+</script>
+</head>  
+<body onLoad="myFunction()">  
+    <center> <h1> ADMIN LOGIN FORM </h1> </center> 
+    <form><center>
+        <div id="demo"> 
+            <label>Username : </label> 
+            <input type="text" id="u1" placeholder="Enter Username" name="username" required><br>
+            <label>Password : </label> 
+            <input type="password" id="p1" placeholder="Enter Password" name="password" required><br>
+            <button type="submit" id="b1" onclick="f1()" >Login</button> 
+            <input type="checkbox" checked="checked"> Remember me 
+         <a href="signup.html">   <button type="button"  id="cancelbtn"> Cancel</button></a>
+      </center>  </div> 
+    </form>
+     <div id="snackbar">YOU ARE IN "ADMIN LOGIN " PAGE!!</div>    
+</body>   
+</html>
+
+ 

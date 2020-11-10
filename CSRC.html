@@ -1,0 +1,116 @@
+<html>
+<head><title>web page</title>
+<style type>
+.a1{
+position: absolute;
+  bottom:1px;
+right: 1px;
+font-size: 18px;
+background-color:lightblue;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index:1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 30px;
+}
+#snackbar.show{
+visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+</HEAD>
+<Body bgColor="violet" onLoad ="myFunction()">
+<CENTER><img src="bg1.jpg" width="100%" height="50%"/ class="img"></CENTER>
+<marquee><h1>COURSES IN OUR CMS!!</h1></marquee>
+
+<A HREF="index.HTML" class="a1">back to home</A>
+<center>
+<table border="1">
+<tr><th colspan="4">JUNIOR COLLEGE</TH></tr>
+<tr><th colspan="2"> GENERAL SCIENCE</Th><th colspan="2">BIFOCAL SCIENCE</Th></tr>
+<tr><th>COMPULSORY SUBJECTS</TH><tH>OPTIONAL SUBJECTS</TH><th>COMPULSORY SUBJECTS</TH><tH>OPTIONAL SUBJECTS</TH></tr>
+<tr><td>ENGLISH</TD><td>HINDI</TD>
+<td>ENGLISH</TD><td>HINDI</TD></TR>
+<tr><td>PHYSICS</TD><td>IT</TD>
+<td>PHYSICS</TD><td>ELECTRONIC</TD></TR>
+<tr><td>CHEMISTRY</TD><td>-</TD>
+<td>CHEMISTRY</TD><td>COMPUTER SCIENCE</TD></TR>
+<tr><td>MATHS & STATS</TD><td>-</TD>
+<td>MATHS & STATS</TD><td>-</TD></TR>
+<tr><td>BIOLOGY</TD><td>-</TD>
+<td>-</TD><td>-</TD></TR>
+<tr><td>EVS</TD><td>-</TD>
+<td>EVS</TD><td>-</TD></TR>
+<tr><td>PHYSICAL & HEALTH EDUCATION</TD><td>-</TD>
+<td>PHYSICAL & HEALTH EDUCATION</TD><td>-</TD></TR>
+</center></table>
+<br><hr><br>
+<table border="1">
+<tr><th colspan="9">DEGREE COLLEGE</TH>
+<tr><th colspan="5">SCIENCE</TH>
+<th colspan="2">COMMERCE</TH>
+<TH>ARTS</TH>
+<th>MANAGEMENT COURSE</TH>
+</tr
+<tr><th colspan="3">PLAIN BSc</TH>
+<th colspan="2">TECHNICAL BSc</TH>
+<th colspan="2">BACHELOR OF COMMERCE</TH>
+<th>BACHELOR OF ARTS</TH>
+<th>BACHELOR OF MANAGEMENT STUDIES</TH>
+<tr><td>BSC CBZ</td><td>BSC PCM</TD><TD>BSC PCB </TD><TD>BSC CS</TD><TD>BSC IT</TD><TD>BBI</TD><TD>BAF</TD><TD>BA</TD><TD>BMS</TD>
+</table>
+<p>IF YOU WILL LOGIN OR SIGN UP TO CMS YOU WILL GET MORE DETAIL ABOUT COURSES</p>
+<div id="snackbar">YOU ARE IN "COURSES OFFERED" PAGE!!</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

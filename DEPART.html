@@ -1,0 +1,107 @@
+<html>
+
+<head><title>web page</title>
+<style type="text/css">
+.d1{
+position: absolute;
+  bottom: 100px;
+right:5px;
+font-size: 10px;
+background-color:yellow;
+}
+.a1{
+position: absolute;
+  bottom: 1px;
+right: 5px;
+font-size: 20px;
+background-color:lightgreen;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index:1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 15px;
+}
+#snackbar.show{
+visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+</HEAD>
+<Body bgColor="violet" onLoad="myFunction()">
+<CENTER><img src="bg1.jpg" width="100%" height="50%"/ class="img">
+</CENTER>
+<marquee><h1>DEPARTMENT IN OUR CMS!!</h1></marquee>
+<div class="d1">
+<table border="3">
+<tr>
+<th>DEPARTMENTS</TH>
+<th colspan="6">ADMIN</Th>
+<th colspan="2"> FACULTY</th>
+<th colspan="4">STUDENT </Th>
+<th colspan="3">STAFF</Th></tr>
+<tr><th>MODULES</TH><TD>FACULTY DATA</TD><td>STUDENT DATA</TD><td>STAFF DATA</TD><td>FACULTY SALARY</TD><td>STAFF SALARY</TD><td>COURSES OFFERED</TD><td>FACULTY DETAILS</TD>
+<td>LIST OF STUDENTS IN CLASS</TD><TD>LIST OF COURSES</TD><td>FEES LIST AS PER COURSES</TD><td>LAST YEAR QUESTION PAPER</TD><td>SYLLABUS OF THUS YEAR</TD><TD>OFFICE</TD><td>EXAMINATION COMMITTEE</TD>
+<td>NON TEACHING STAFF</TD></TR>
+</table></div>
+
+
+<div id="snackbar">YOU ARE IN "DEPARTMENT" PAGE!!</div>
+<a href="index.html" class="a1">back home</a>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

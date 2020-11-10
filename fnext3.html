@@ -1,0 +1,69 @@
+<html>
+<head> 
+<style>
+.a1{
+position:absolute;
+bottom:1px;
+right:1px;
+background-color:lightblue;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index:1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 15px;
+}
+#snackbar.show{
+visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+<body onLoad="myFunction()" bgColor="orange">
+<h1 align="center"><b>FACULTY3 PAGE</b></h1><br><br>
+<center><br><br>
+<TABLE border="1">
+<TR><th>STUDENTS DATA</TH></tr><tr><Td><a href=""><IMG SRC="stud.jpg" height="200" width="200"></a>
+</Td></tr><th>FULL DETAILS</TH></tr><tr><Td><a href=""><IMG SRC="teach.jpg" height="200" width="200"></a></Td></tr>
+</table></center>
+<div id="snackbar">CLICK ON THE IMAGE TO MORE  !!</div>
+<a href="fnext.html" class="a1">click here to go to faculty data page</a>
+
+</body>
+</html>

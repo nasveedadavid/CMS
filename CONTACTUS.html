@@ -1,0 +1,97 @@
+<html>
+
+<head><title>web page</title>
+<style>
+.a1{
+position: absolute;
+  bottom: 1px;
+right: 3px;
+font-size: 18px;
+background-color:lightgreen
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index:1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 30px;
+}
+#snackbar.show{
+visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
+</script>
+
+</HEAD>
+<body bgColor="violet" onLoad="myFunction()">
+<CENTER><img src="bg1.jpg" width="100%" height="50%"/ class="img"></CENTER>
+<marquee><h1>CONTACT OUR CMS!!</h1></marquee>
+<div>
+<center>
+<TABLE border="4" width="80" height="40">
+<tr><th>
+<hl><center><font color="black">CMS</hl>
+</TH></TR></table>
+
+<TABLE border="4" width="50%" height="25%">
+<tr><th>
+<hl><center><font color="black">CONTACT MODE</hl>
+</th>
+<th>
+<hl><center><font color="black">DETAILS</hl></TH></TR>
+<tr><td>mobile</td><td>0987654321</td></tr>
+<tr><td>email</td><td>cms@gmail.com</td></tr>
+<tr><td>website</td><td>www.cms.com</td></tr>
+</table>
+</center>
+</div>
+<div id="snackbar">YOU ARE IN "CONTACTUS" PAGE!!</div>
+<A HREF="index.html" class="a1">back to home</A>
+<BODY>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

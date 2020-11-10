@@ -1,0 +1,188 @@
+<html>
+<head>
+<style>
+.a1{
+position:absolute;
+bottom:1px;
+right:1px;
+background-color:lightblue;
+}
+.a2{
+position:absolute;
+bottom:1px;
+left:1px;
+background-color:lightblue;
+}
+.a3{
+position:absolute;
+bottom:1px;
+left:1px;
+background-color:lightblue;
+}
+
+.h{
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+  font-size: 45px;
+}
+.d1{
+position:absolute;
+left:1px;
+top:300px;
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+  font-size: 15px;
+}
+.d2{
+position:absolute;
+left:250px;
+top:300px;
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+  font-size: 15px;
+}
+.d3{
+position:absolute;
+left:500px;
+top:300px;
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+  font-size: 15px;
+}
+.d4{
+position:absolute;
+left:750px;
+top:300px;
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+  font-size: 15px;
+}
+.d5{
+position:absolute;
+left:1000px;
+top:300px;
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: pink;
+  font-size: 15px;
+}
+
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index:1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 15px;
+}
+#snackbar.show{
+visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+</style>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+}</script>
+</head>
+<body onLoad="myFunction()" bgColor="red">
+<center>
+<h1 class="h">STUDENT DATA</H1>
+<IMG SRC="stud.jpg" height="150" width="150">
+<br>
+<br>
+<table border="1" class="d1">
+<tr><th colspan="2">class 1 </th></tr>
+<tr><th>student_id</TH><TH>student_name</TH></TR>
+<tr><tD>1</TD><TD>mina</TD></TR>
+<tr><tD>2</TD><TD>dina</TD></TR>
+<tr><tD>3</TD><TD>tina</TD></TR>
+<tr><tD>4</TD><TD>gina</TD></TR>
+<tr><tD>5</TD><TD>seetha</TD></TR>
+</table>
+
+<table border="1" class="d2">
+<tr><th colspan="2">class 2</th></tr>
+<tr><th>student_id</TH><TH>student_name</TH></TR>
+<tr><tD>6</TD><TD>megha</TD></TR>
+<tr><tD>7</TD><TD>vivaan</TD></TR>
+<tr><tD>8</TD><TD>dev</TD></TR>
+<tr><tD>9</TD><TD>shutli</TD></TR>
+<tr><tD>10</TD><TD>rudra</TD></TR>
+</table>
+<table border="1" class="d3">
+<tr><th colspan="2">class 3</th></tr>
+<tr><th>student_id</TH><TH>student_name</TH></TR>
+<tr><tD>11</TD><TD>smita</TD></TR>
+<tr><tD>12</TD><TD>amita</TD></TR>
+<tr><tD>13</TD><TD>chaaru</TD></TR>
+<tr><tD>14</TD><TD>kevel</TD></TR>
+<tr><tD>15</TD><TD>ballu</TD></TR>
+</table>
+<table border="1" class="d4">
+<tr><th colspan="2">class 4</th></tr>
+<tr><th>student_id</TH><TH>student_name</TH></TR>
+<tr><tD>16</TD><TD>payal</TD></TR>
+<tr><tD>17</TD><TD>rina</TD></TR>
+<tr><tD>18</TD><TD>divya</TD></TR>
+<tr><tD>19</TD><TD>rahul</TD></TR>
+<tr><tD>20</TD><TD>joel</TD></TR>
+</table>
+<table border="1" class="d5">
+<tr><th colspan="2">class 5</th></tr>
+<tr><th>student_id</TH><TH>student_name</TH></TR>
+<tr><tD>21</TD><TD>diksha</TD></TR>
+<tr><tD>22</TD><TD>vidhi</TD></TR>
+<tr><tD>23</TD><TD>jiya</TD></TR>
+<tr><tD>24</TD><TD>rani</TD></TR>
+<tr><tD>25</TD><TD>kebin</TD></TR>
+</table>
+</center><a href="stlogin.html" class=a1> click to go back to login page!!</a>
+     <div id="snackbar">YOU ARE IN "STUDENT DATA" PAGE!!</div> 
+<a href="stnext1.html" class="a3">click here for more field of student!! </A>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
